@@ -209,6 +209,9 @@ footer p{
     float: left;
     font-size: 50px;
 }
+.col-sm-1{
+    width: 15%px;
+}
 .logo:hover{
     color: #000;
 }
