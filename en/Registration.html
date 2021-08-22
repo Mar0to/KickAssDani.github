@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://kit.fontawesome.com/880d5813ce.js" crossorigin="anonymous"></script> 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body id="cuerpo">
+	<header class="container" >
+        <div class="ancho">
+            <section class="logo">
+                <p><a href="home.html"><strong>Hospital Metropolitano 506</strong></a></p>
+            </section>
+            <section class="imagenLogo">
+               	<a href="home.html"><img src="../img/bata-nav.png" id="logo"></a>
+            </section>
+        </div>
+        <nav id="menu">
+            <ul class="row">
+                <li class="col"><a href="home.html">Home</a></li>
+                <li class="col"><a href="Registration.html">Sign In</a></li>
+                <li class="col"><a href="login.html">Log In</a></li>
+                <li class="col"><a>Contacts</a></li>
+                <li class="col"><a href="requestAppoinment.html">Request an Appoinment</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="centrado container">
+        <form action="" method="POST" class="formulario" id="formulario">
+            <h5 class="h3 mb-3 font-weight-normal"><strong>Sign In</strong></h5>
+            <img src="../img/bata.png" class="imagenR">
+            <section class="row" id="Form">
+                <!--Grupo: Nombre-->
+                <article class="col-lg-6">
+				    <section class="formulario__grupo" id="grupo__nombre">
+					    <label for="nombre" class="formulario_lable" id="parrafos"><strong>Name</strong></label>
+					    <article class="formulario__grupo-input">
+						<input type="text" placeholder="Jose Francisco" name="nombre" id="nombre" class="formulario_input">
+						</article>
+                        <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i>Only characters are accepted and an extension greater than 6 characters</p>
+				    </section>
+			    </article>
+            <!--Grupo: Apellidos-->
+            <article class="col-lg-6">
+				<section class="formulario__grupo " id="grupo__apellidos">
+					<label for="apellidos" class="formulario_lable" id="parrafos"><strong>Last Name</strong></label>
+					<article class="formulario__group-input">
+						<input type="text" placeholder="Gúzman Ledezma" name="apellidos" id="apellidos" class="formulario_input">
+					</article>
+                    <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i>Only characters are accepted and an extension greater than 6 characters</p>
+				</section>
+			</article>
+            <!--Grupo: Teléfono-->
+            <article class="col-lg-6">
+				<section class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario_lable" id="parrafos"><strong>Phone</strong></label>
+					<article class="formulario__group-input">
+						<input type="text" placeholder="71205006" name="telefono" id="telefono" class="formulario_input">
+					</article>
+                    <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i>You must enter a validity number.</p>
+				</section>
+			</article>
+            <!--Grupo: Cédula-->
+            <article class="col-lg-6">
+				<section class="formulario__grupo" id="grupo__cedula">
+					<label for="cedula" class="formulario_lable" id="parrafos"><strong>ID</strong></label>
+					<article class="formulario__group-input">
+						<input type="text" placeholder="1011101111" maxlength="10" minlength="9" name="cedula" id="cedula" class="formulario_input">
+					</article>
+                    <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i>Enter your ID with everything and 0 to be able to perform the operation</p>
+				</section>
+			</article>
+            <!--Grupo: Fecha Nacimiento-->
+            <article class="col-lg-6" >
+                <section class="formulario__grupo" id="grupo__fechaNacimiento">
+                    <label for="fechaNacimiento" class="formulario_lable" id="parrafos"><strong>Birthday</strong></label>
+                    <article class="formulario__group-input">
+                        <input type="text" placeholder="dd/mm/yyyy" name="fechaNacimiento" id="fechaNacimiento" class="formulario_input">
+                    </article>
+                <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> Please indicate your date of birth.
+                    The format would be the following: day / month / year</p>
+                </section>
+            </article>
+            <!--Grupo: Usuario-->
+            <article class="col-lg-6">
+                <section class="formulario__grupo" id="grupo__usuario">
+                    <label for="usuario" class="formulario_lable" id="parrafos"><strong>User</strong></label>
+                    <article class="formulario__group-input">
+                        <input type="text" placeholder="jfran2309" name="usuario" id="usuario" class="formulario_input">
+                    </article>
+                    <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> The user must contain more than 6 characters.</p>
+                </section>
+            </article>
+            <!-- Grupo: Clave -->
+            <article class="col-lg-6">
+                <section class="formulario__grupo" id="grupo__password">
+                    <label for="password" class="formulario_lable" id="parrafos"><strong>Password</strong></label>
+                    <article class="formulario__group-input">
+                        <input type="password" placeholder="" minlength="6" name="password" id="password" class="formulario_input">
+                    </article>
+                    <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"> </i> The password must contain more than 6 characters.</p>
+                </section>
+            </article>
+            <!--Grupo: Clave 2--> 
+            <article class="col-lg-6">
+                <section class="formulario__grupo" id="grupo__password2">
+                    <label for="password2" class="formulario_lable" id="parrafos"><strong>Password again</strong></label>
+                    <article class="formulario__group-input">
+                        <input type="password" placeholder="" name="password2" id="password2" class="formulario_input">
+                    </article>
+                    <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> Password do not match, try again</p>
+                </section>
+            </article>
+        </section>
+        <br>
+        <section class="row">
+            <input type="button" id="btnIngresar" value="Sign In" class="offset-lg-2 col-lg-8 boton-ver col-sm-4 col-3">
+        </section>
+        </form>  
+<br>
+
+<section class="row">
+    <article class="col">
+        <a href="../Registrarse.html"><img alt="Bandera_de_España" class="imagenEspanol" src="../img/Bandera_de_España.svg.png"></a>
+    </article>
+    <article class="col">
+        <a href="Registration.html"><img src="../img/1200px-Flag_of_the_United_States.svg.png" alt="bandera Estados" class="imagenEspanol"></a>
+    </article>
+</section>
+
+</main>
+	
+	<footer class="container">
+		<section class="row">
+			<article class="col">
+				<p>© 2020-2021</p>
+				<a id="iconos" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+				<a id="iconos" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+			</article>
+		</section>
+	</footer>
+    <script src="../js/formulario.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

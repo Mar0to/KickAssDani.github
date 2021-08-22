@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request Appoinment</title>
+  <link rel="stylesheet" href="../css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/880d5813ce.js" crossorigin="anonymous"></script> 
+</head>
+<body id="cuerpo">
+  <header class="container" >
+    <div class="ancho">
+        <div class="logo">
+            <p><a href="/en/home.html"><strong>Hospital Metropolitano 506</strong></a></p>
+        </div>
+        <div class="imagenLogo">
+             <a href="/en/home.html"><img src="../img/bata-nav.png" id="logo"></a>
+        </div>
+    </div>
+    <nav id="menu">
+        <ul class="row">
+            <li class="col"><a href="home.html">Home</a></li>
+            <li class="col"><a href="Registration.html">Sign In</a></li>
+            <li class="col"><a href="login.html">Log In</a></li>
+            <li class="col"><a>Contacts</a></li>
+            <li class="col"><a href="requestAppoinment.html">Request as Appoinment</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container centrado">
+  <br>
+	<h5 class="h3 mb-3 font-weight-normal"><strong>Request Appoinment</strong></h5>
+	<section class="row">
+    <article class="col">
+        <p id="parrafos" class="textocentrado">We remind you that you do not need to be registered in our database, but it is recommended that you do so.
+          Why will you ask? Our page has a medical history which will show the most important information
+          relevant to your file, as well as the appointments and the dates in which it was made. </p>
+        <p id="parrafos" class="textocentrado">But in order to obtain this benefit, you must be registered in our database.</p>
+        <p id="parrafos" class="textocentrado">Even so, it is mentioned that it is not mandatory to make such a registration, feel sure to request your appointment without being registered.</p>
+    </article>
+    <br>
+    </section>
+    <br>
+    <table class="table" id="Citas" border="1px">
+      <thead>
+      <tr>
+        <th>Day</th>
+        <th>Start</th>
+        <th>End</th>
+      </tr>
+      <tbody>
+        <tr>
+        <th>Monday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Saturday</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+    </tbody>
+    </thead>
+    </table> 
+    <br> 
+    <section>
+      <article>
+        <p id="parrafos" class="textocentrado">Please
+          select the day and time that best suits you to make your appointment, take into consideration
+          that changes can only be made by communicating the situation to our call center.</p>
+      </article>
+    </section>
+    <br>
+    <form action="" method="POST" class="container" id="formularioSolicitarCita">
+      
+      <img src="../img/bata.png" class="imagenR">
+      <section class="row" id="Form">
+        <!--Grupo: Nombre-->
+        <article class="col-lg-6">
+          <section class="formulario__group" id="grupo__nombre">
+            <label for="nombre" class="formulario_lable" id="parrafos"><strong>Name</strong></label>
+              <article class="formulario__grupo-input">
+                <input type="text" placeholder="Jose Francisco" name="nombre" id="nombre" class="formulario_input">
+              </article>
+              <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i>Only characters are accepted and an extension greater than 6 characters</p>
+          </section>
+        </article>
+         <!--Grupo: Apellidos-->
+         <article class="col-lg-6">
+          <section class="formulario__grupo " id="grupo__apellidos">
+            <label for="apellidos" class="formulario_lable" id="parrafos"><strong>Last name</strong></label>
+            <article class="formulario__group-input">
+              <input type="text" placeholder="Gúzman Ledezma" name="apellidos" id="apellidos" class="formulario_input">
+            </article>
+                      <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i> Only characters are accepted and an extension greater than 6 characters</p>
+          </section>
+        </article>
+          <!--Grupo: Teléfono-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__telefono">
+              <label for="telefono" class="formulario_lable" id="parrafos"><strong>Phone</strong></label>
+              <article class="formulario__group-input">
+                <input type="text" placeholder="71205006" name="telefono" id="telefono" class="formulario_input">
+              </article>
+                        <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> You must enter a validity number. </p>
+            </section>
+          </article>
+          <!--Grupo: Cédula-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__cedula">
+              <label for="cedula" class="formulario_lable" id="parrafos"><strong>ID</strong></label>
+              <article class="formulario__group-input">
+                <input type="text" placeholder="1011101111" name="cedula" id="cedula" class="formulario_input">
+              </article>
+                 <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i>You must enter enter the number of digits that
+                  shows the identity card or in which case those to indicate
+                  the passport.</p>
+            </section>
+          </article>  
+          <!--Grupo: Fecha para la cita-->
+          <article class="col-lg-6" >
+            <section class="formulario__grupo" id="grupo__fechaCita">
+                <label for="fechaCita" class="formulario_lable" id="parrafos"><strong>Date</strong></label>
+                <article class="formulario__group-input">
+                    <input type="date" placeholder="" name="fechaCita" id="fechaCita" class="formulario_input">
+                </article>
+            <p class="formulario__input-error"></p>
+            </section>
+          </article>
+          <!--Grupo: Usuario-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario_lable" id="parrafos"><strong>User</strong></label>
+                <article class="formulario__group-input">
+                    <input type="text" placeholder="jfran2309" name="usuario" id="usuario" class="formulario_input">
+                </article>
+                <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i>The user must contain more than 6 characters.</p>
+            </section>
+        </article>
+          <!--Grupo: Tipo de cita-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__tipoCita">
+                <label for="tipoCita" class="formulario_lable" id="parrafos"><strong>Type of date</strong></label>
+                <article class="formulario__group-input">
+                    <select required name="tipoCita"  id="tipoCita" class="formulario_input">
+                      <option value selected ></option>
+                      <option value="Medicina General">General Medicine</option>
+                      <option value="Cirugía Ambulatoria">Ambulatory surgery</option>
+                      <option value="Nutrición">Nutrition</option>
+                      <option value="Psicología">Psychology</option>
+                      <option value="Ortopedia">Orthopedics</option>
+                      <option value="Fisioterapia">Physiotherapy</option>
+                      <option value="Cardiología">Cardiology</option>
+                      <option value="Laboratorio">laboratory</option>
+                      <option value="Psiquiatría">Psychiatry</option>
+                    </select>
+                </article>
+                <p></p>
+            </section>
+        </article>
+        <!--Grupo: Hora cita-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__horaCita">
+                <label for="horaCita" class="formulario_lable" id="parrafos"><strong>Appointment time</strong></label>
+                <article class="formulario__group-input">
+                    <select required name="horaCita" id="horaCita" class="formulario_input">
+                        <option value selected ></option>
+                        <option value="8:00">8:00 a.m</option>
+                        <option value="9:00">9:00 a.m</option>
+                        <option value="10:00">10:00 a.m</option>
+                        <option value="11:00">11:00 am</option>
+                        <option value="1:00">1:00 p.m</option>
+                        <option value="2:00">2:00 p.m</option>
+                        <option value="3:00">3:00 p.m</option>
+                    </select>
+                </article>
+                <p class="formulario__input-error" >Please select a time for your appointment.</p>
+            </section>
+        </article>
+        <!--Grupo: Sintomas-->
+        <article class="col-lg-12">
+          <section class="formulario__grupo">
+              <label for="sintomas" class="formulario_lable" id="parrafos"><strong>Symptoms</strong></label>
+              <article class="formulario__group-input">
+                <textarea placeholder="Coloque aquí, cualquier síntoma que tenga en este momento, esto con la finalidad de resolver lo más rápido posible el problema."
+                class="formulario_input" id="sintomas"></textarea>
+              </article>
+              <p></p>
+          </section>
+        </article>
+        <br>
+        <section class="row">
+          <input type="button" id="btnIngresar" value="Request" class="offset-lg-2 col-lg-8 boton-ver col-sm-4 col-3">
+          <br>
+        </section>
+      <br>
+    </form>
+
+    <br>
+
+    <section class="container">
+      <article class="row">
+          <table id="tablaAmigos" class="table">
+              <thead>
+                  <th>Name</th>
+                  <th>Last Name</th>
+                  <th>Phone</th>
+                  <th>ID</th>
+                  <th>Date</th>
+                  <th>Type of date</th>
+                  <th>Appointment time</th>
+                  <th>User</th>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </article>
+  </section>
+     <br>
+     <br>
+		<section class="row">
+			<article class="col">
+				<a href="../es/solicitarCita.html"><img alt="Bandera_de_España" class="imagenEspanol" src="../img/Bandera_de_España.svg.png"></a>
+			</article>
+			<article class="col">
+				<a href="../en/requestAppoinment.html"><img src="../img/1200px-Flag_of_the_United_States.svg.png" alt="bandera Estados" class="imagenEspanol"></a>
+			</article>
+		</section>
+</main>
+
+<footer class="container">
+  <section class="row">
+    <article class="col">
+      <p>© 2020-2021</p>
+      <a id="iconos" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+      <a id="iconos" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </article>
+  </section>
+	</footer>
+  <script src="../js/formulario.js"></script>
+  <script src="../js/logicaUsuarios.js"></script>
+  <script src="../js/FormularioInicioSesion.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

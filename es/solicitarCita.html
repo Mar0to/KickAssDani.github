@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solicitar cita</title>
+  <link rel="stylesheet" href="/css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/880d5813ce.js" crossorigin="anonymous"></script> 
+</head>
+<body id="cuerpo">
+  <header class="container" >
+    <div class="ancho">
+        <div class="logo">
+            <p><a href="/index.html"><strong>Hospital Metropolitano 506</strong></a></p>
+        </div>
+        <div class="imagenLogo">
+             <a href="/index.html"><img src="/img/bata-nav.png" id="logo"></a>
+        </div>
+    </div>
+    <nav id="menu">
+        <ul class="row">
+            <li class="col"><a href="/index.html">Inicio</a></li>
+            <li class="col"><a href="/es/Registrarse.html">Registrarse</a></li>
+            <li class="col"><a href="/es/login.html">Iniciar Sesión</a></li>
+            <li class="col"><a>Contacto</a></li>
+            <li class="col"><a href="/es/solicitarCita.html">Solicitar cita</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container centrado">
+  <br>
+	<h5 class="h3 mb-3 font-weight-normal"><strong>Solicitar cita</strong></h5>
+	<section class="row">
+    <article class="col">
+        <p id="parrafos" class="textocentrado">Le recordamos que no necesita está registrado en nuestra base de datos, pero se le recomienda hacerlo.
+        ¿Porqué se preguntará? Nuestra página cuenta con un historial médico el cual mostrará la información más
+        relevante de su expediente, así como las citas y las fechas en las que se realizó.</p>
+        <p id="parrafos" class="textocentrado">Pero para poder obtener este beneficio debe de estar registrado en nuestra base de datos.</p>
+        <p id="parrafos" class="textocentrado">Aun así se le menciona que no es obligatorio realizar dicho registro, siéntase seguro de solicitar su cita sin estar registrado.</p>
+    </article>
+    <br>
+    </section>
+    <br>
+    <table class="table" id="Citas" border="1px">
+      <thead>
+      <tr>
+        <th>Día</th>
+        <th>Hora de inicio</th>
+        <th>Hora de finalización</th>
+      </tr>
+      <tbody>
+        <tr>
+        <th>Lunes</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Martes</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Miércoles</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Jueves</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Viernes</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+      <tr>
+        <th>Sábado</th>
+        <td>8:00 a.m</td>
+        <td>4:00 p.m</td>
+      </tr>
+    </tbody>
+    </thead>
+    </table> 
+    <br> 
+    <section>
+      <article>
+        <p id="parrafos" class="textocentrado">Por favor 
+          seleccione el día y la hora que más le convenga para realizar su cita, tenga en consideración
+          que puede realizarse cambios solamente comunicando la situación a nuestro call center.</p>
+      </article>
+    </section>
+    <br>
+    <form action="" method="POST" class="container" id="formularioSolicitarCita">
+      <h5 class="h3 mb-3 font-weight-normal"><strong>Registrarse</strong></h5>
+      <img src="/img/bata.png" class="imagenR">
+      <section class="row" id="Form">
+        <!--Grupo: Nombre-->
+        <article class="col-lg-6">
+          <section class="formulario__group" id="grupo__nombre">
+            <label for="nombre" class="formulario_lable" id="parrafos"><strong>Nombre</strong></label>
+              <article class="formulario__grupo-input">
+                <input type="text" placeholder="Jose Francisco" name="nombre" id="nombre" class="formulario_input">
+              </article>
+              <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> Solo se aceptan caractéres y una extensión mayor a 6 caractéres</p>
+          </section>
+        </article>
+         <!--Grupo: Apellidos-->
+         <article class="col-lg-6">
+          <section class="formulario__grupo " id="grupo__apellidos">
+            <label for="apellidos" class="formulario_lable" id="parrafos"><strong>Apellidos</strong></label>
+            <article class="formulario__group-input">
+              <input type="text" placeholder="Gúzman Ledezma" name="apellidos" id="apellidos" class="formulario_input">
+            </article>
+                      <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i> Solo se aceptan caractéres y una extensión mayor a 6 caractéres</p>
+          </section>
+        </article>
+          <!--Grupo: Teléfono-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__telefono">
+              <label for="telefono" class="formulario_lable" id="parrafos"><strong>Télefono</strong></label>
+              <article class="formulario__group-input">
+                <input type="text" placeholder="71205006" name="telefono" id="telefono" class="formulario_input">
+              </article>
+                        <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> Debe de ingresar un número de validez.</p>
+            </section>
+          </article>
+          <!--Grupo: Cédula-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__cedula">
+              <label for="cedula" class="formulario_lable" id="parrafos"><strong>Cédula</strong></label>
+              <article class="formulario__group-input">
+                <input type="text" placeholder="1011101111" name="cedula" id="cedula" class="formulario_input">
+              </article>
+                 <p class="formulario__input-error"> <i class="fas fa-exclamation-triangle"></i> Debe de ingresar ingresar la cantidad de dígitos que 
+                  muestra la cédula o en cuyo caso los que indicar
+                  el pasaporte.</p>
+            </section>
+          </article>  
+          <!--Grupo: Fecha para la cita-->
+          <article class="col-lg-6" >
+            <section class="formulario__grupo" id="grupo__fechaCita">
+                <label for="fechaCita" class="formulario_lable" id="parrafos">Fecha para la cita</label>
+                <article class="formulario__group-input">
+                    <input type="date" placeholder="" name="fechaCita" id="fechaCita" class="formulario_input">
+                </article>
+            <p class="formulario__input-error">Por favor debe de indicar su fecha de nacimiento.</p>
+            </section>
+          </article>
+          <!--Grupo: Usuario-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario_lable" id="parrafos"><strong>Usuario</strong></label>
+                <article class="formulario__group-input">
+                    <input type="text" placeholder="jfran2309" name="usuario" id="usuario" class="formulario_input">
+                </article>
+                <p class="formulario__input-error"><i class="fas fa-exclamation-triangle"></i> El usuario debe de contener más de 6 caractéres.</p>
+            </section>
+        </article>
+          <!--Grupo: Tipo de cita-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__tipoCita">
+                <label for="tipoCita" class="formulario_lable" id="parrafos">Tipo de Cita</label>
+                <article class="formulario__group-input">
+                    <select required name="tipoCita"  id="tipoCita" class="formulario_input">
+                      <option value selected ></option>
+                      <option value="Medicina General">Medicina General</option>
+                      <option value="Cirugía Ambulatoria">Cirugía Ambulatoria</option>
+                      <option value="Nutrición">Nutrición</option>
+                      <option value="Psicología">Psicología</option>
+                      <option value="Ortopedia">Ortopedia</option>
+                      <option value="Fisioterapia">Fisioterapia</option>
+                      <option value="Cardiología">Cardiología</option>
+                      <option value="Laboratorio">Laboratorio</option>
+                      <option value="Psiquiatría">Psiquiatría</option>
+                    </select>
+                </article>
+                <p></p>
+            </section>
+        </article>
+        <!--Grupo: Hora cita-->
+          <article class="col-lg-6">
+            <section class="formulario__grupo" id="grupo__horaCita">
+                <label for="horaCita" class="formulario_lable" id="parrafos">Hora Cita</label>
+                <article class="formulario__group-input">
+                    <select required name="horaCita" id="horaCita" class="formulario_input">
+                        <option value selected ></option>
+                        <option value="8:00">8:00 a.m</option>
+                        <option value="9:00">9:00 a.m</option>
+                        <option value="10:00">10:00 a.m</option>
+                        <option value="11:00">11:00 am</option>
+                        <option value="1:00">1:00 p.m</option>
+                        <option value="2:00">2:00 p.m</option>
+                        <option value="3:00">3:00 p.m</option>
+                    </select>
+                </article>
+                <p class="formulario__input-error" >Por favor selecciones una hora para su cita</p>
+            </section>
+        </article>
+        <!--Grupo: Sintomas-->
+        <article class="col-lg-12">
+          <section class="formulario__grupo">
+              <label for="sintomas" class="formulario_lable" id="parrafos">Sintomas</label>
+              <article class="formulario__group-input">
+                <textarea placeholder="Coloque aquí, cualquier síntoma que tenga en este momento, esto con la finalidad de resolver lo más rápido posible el problema."
+                class="formulario_input" id="sintomas"></textarea>
+              </article>
+              <p></p>
+          </section>
+        </article>
+        <br>
+        <section class="row">
+          <input type="button" id="btnIngresar" value="Solicitar Cita" class="offset-lg-2 col-lg-8 boton-ver col-sm-4 col-3">
+          <br>
+        </section>
+      <br>
+    </form>
+
+    <br>
+
+    <section class="container">
+      <article class="row">
+          <table id="tablaAmigos" class="table">
+              <thead>
+                  <th>Nombre</th>
+                  <th>Apellidos</th>
+                  <th>Teléfono</th>
+                  <th>Cédula</th>
+                  <th>Fecha Cita</th>
+                  <th>Tipo de Cita</th>
+                  <th>Hora</th>
+                  <th>Usuario</th>
+              </thead>
+              <tbody>
+              </tbody>
+          </table>
+      </article>
+  </section>
+     <br>
+     <section class="row">
+			<article class="col">
+				<a href="../es/solicitarCita.html"><img alt="Bandera_de_España" class="imagenEspanol" src="../img/Bandera_de_España.svg.png"></a>
+			</article>
+			<article class="col">
+				<a href="/en/requestAppoinment.html"><img src="../img/1200px-Flag_of_the_United_States.svg.png" alt="bandera Estados" class="imagenEspanol"></a>
+			</article>
+		</section>
+</main>
+
+<footer class="container">
+  <section class="row">
+    <article class="col">
+      <p>© 2020-2021</p>
+      <a id="iconos" href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+      <a id="iconos" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </article>
+  </section>
+	</footer>
+  <script src="/js/formulario.js"></script>
+  <script src="/js/logicaUsuarios.js"></script>
+  <script src="/js/FormularioInicioSesion.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
