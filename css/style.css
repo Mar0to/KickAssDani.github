@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Arial', 'Cour Riwe';
+    font-family: 'Arial';
     font-size: 16px;
 }
 #menu{
@@ -201,7 +201,7 @@ footer p{
     width: 100%;
     margin: auto;
 }
-.logoTexto{
+.logo{
     margin-left: 20px;
     margin-top: 20px;
     width: 50%;
@@ -209,15 +209,11 @@ footer p{
     float: left;
     font-size: 50px;
 }
-.pequ{
-    width: 15%;
-    height: 10px;
-}
 .logo:hover{
     color: #000;
 }
 #logo{
-    margin-left: 50px;
+    margin-left: 70px;
     width: 30%;
     height: 100px;
     margin-top: 10px;
