@@ -201,7 +201,7 @@ footer p{
     width: 100%;
     margin: auto;
 }
-.logo{
+.logoTexto{
     margin-left: 20px;
     margin-top: 20px;
     width: 50%;
@@ -210,7 +210,7 @@ footer p{
     font-size: 50px;
 }
 .pequ{
-    width: 15%px;
+    width: 15%;
 }
 .logo:hover{
     color: #000;
